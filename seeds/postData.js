@@ -1,5 +1,3 @@
-// still need to add more postData
-
 const { Post } = require('../models');
 
 const postData = [
@@ -12,6 +10,16 @@ const postData = [
     title: 'Post 2 Title',
     content: 'This is the content of post 2.',
     user_id: 2
+  },
+  {
+    title: 'Post 3 Title',
+    content: 'This is the content of post 3.',
+    user_id: 3
+  },
+  {
+    title: 'Post 4 Title',
+    content: 'This is the content of post 4.',
+    user_id: 4
   }
 ];
 

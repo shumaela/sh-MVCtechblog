@@ -1,5 +1,3 @@
-// still need to add more users
-
 const { User } = require('../models');
 
 const userData = [
@@ -12,6 +10,16 @@ const userData = [
     username: 'user2',
     password: 'password2',
     email: 'user2@gmail.com'
+  },
+  {
+    username: 'user3',
+    password: 'password3',
+    email: 'user3@gmail.com'
+  },
+  {
+    username: 'user4',
+    password: 'password4',
+    email: 'user4@gmail.com'
   }
 ];
 
