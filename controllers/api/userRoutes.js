@@ -1,5 +1,3 @@
-// still may need to create more routes; perhaps signup post route 
-
 const router = require('express').Router();
 const { User } = require('../../models');
 
@@ -23,7 +21,6 @@ router.post('/signup', async (req, res) => {
     res.status(400).json(err);
   }
 });
-
 
 // Route to log in
 router.post('/login', async (req, res) => {
