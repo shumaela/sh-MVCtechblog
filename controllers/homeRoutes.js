@@ -1,5 +1,6 @@
 // still need to add more routes!!!
 
+
 const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 
@@ -26,7 +27,8 @@ router.get('/', async (req, res) => {
     // Pass serialized data and session flag into template
     res.render('homepage', {
       posts,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in 
+      // need to add here that is user is logged in then to only display logout button and remove login/signup
     });
   } catch (err) {
     res.status(500).json(err);
