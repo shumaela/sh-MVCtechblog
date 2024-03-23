@@ -55,6 +55,42 @@ main {
   /* margin-bottom: 10px; */
 }
 
+form {
+  margin-top: 30px;
+  display:flex;
+  justify-content: center;
+}
+
+/* Wrapper for form elements */
+.form-group {
+  margin-bottom: 10px; /* Add margin between form groups */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
+}
+
+/* Submit button style */
+button[type="submit"] {
+  background-color: #ec9052;
+  color: white;
+  padding: 10px 20px; /* Padding around the text */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px; /* Add margin between input and button */
+}
+
+/* Space between label and input */
+form label {
+  margin-right: 10px; /* Add margin to the right of the label */
+}
+
+form input[type="text"],
+form input[type="password"] {
+  margin-bottom: 10px; /* Add margin below the input fields */
+}
+
+
 /* Footer styles */
 footer {
   position: fixed;
