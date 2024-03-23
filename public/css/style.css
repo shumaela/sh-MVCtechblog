@@ -71,6 +71,7 @@ form {
 /* Submit button style */
 button[type="submit"] {
   background-color: #ec9052;
+  font-family: 'Cinzel Decorative', sans-serif;
   color: white;
   padding: 10px 20px; /* Padding around the text */
   text-align: center;
