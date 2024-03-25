@@ -27,20 +27,13 @@ router.get('/', isAuthenticated, async (req, res) => {
 });
 
 // Route to handle creating a new blog post
-router.post('/new', isAuthenticated, async (req, res) => {
+router.get('/new', isAuthenticated, async (req, res) => {
   try {
-    // Extract post data from the request body
-    const { title, content } = req.body;
-
-    // Create a new post in the database
-    const newPost = await Post.create({
-      title,
-      content,
-      user_id: req.session.user_id // Assign the user ID to the post
-    });
-
-    // Redirect the user to the dashboard after creating the post
-    res.redirect('/dashboard');
+  
+    res.render('newpost', { 
+      logged_in: req.session.logged_in  // Pass user information to the view
+     
+    })
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Server error' });

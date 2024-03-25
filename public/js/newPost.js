@@ -1,4 +1,7 @@
-const createPost = async (title, content) => {
+const createPost = async (event) => {
+  event.preventDefault()
+  const title = document.getElementById('title').value;
+  const content = document.getElementById('content').value; 
     try {
       const response = await fetch(`/api/posts`, {
         method: 'POST',
@@ -21,4 +24,6 @@ const createPost = async (title, content) => {
   // Example usage:
   // Attach this function to a post creation form submission in my HTML
   // <form onsubmit="createPost(title, content)">
+
+  document.getElementById('newPost').addEventListener("submit", createPost)
   

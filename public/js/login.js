@@ -1,4 +1,7 @@
-const login = async (username, password) => {
+const login = async (event) => {
+  event.preventDefault();
+  const username = document.getElementById ('username').value;
+  const password = document.getElementById('password').value;
     try {
       const response = await fetch('/api/users/login', {
         method: 'POST',
@@ -21,4 +24,6 @@ const login = async (username, password) => {
   // Example usage:
   // Attach this function to a login form submission in my HTML
   // <form onsubmit="login(username, password)">
+
+  document.getElementById('login').addEventListener('submit', login)
   
