@@ -17,4 +17,6 @@ const logout = async () => {
   // Example usage:
   // Attach this function to a logout button in my HTML
   // <button onclick="logout()">Logout</button>
+
+  document.getElementById('logout').addEventListener('submit', logout)
   
