@@ -46,3 +46,7 @@ THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
 ```
+
+## Screenshot
+
+[MVC-Tech-Blog](https://github.com/shumaela/sh-MVCtechblog/assets/147661185/bfe17dba-3ed5-4dba-8cca-7269f0866f86)
