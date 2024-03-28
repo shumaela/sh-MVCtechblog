@@ -45,13 +45,13 @@ router.get('/signup', (req, res) => {
 });
 
 // New post route
-router.get('/newpost', (req, res) => {
+router.get('/newPost', (req, res) => {
   // Render the new post page
-  res.render('newpost');
+  res.render('newPost');
 });
 
 // Edit post route
-router.get('/editpost/:id', async (req, res) => {
+router.get('/edit/:id', async (req, res) => {
   try {
     // Find the post by ID
     const postData = await Post.findByPk(req.params.id);
@@ -65,7 +65,7 @@ router.get('/editpost/:id', async (req, res) => {
     const post = postData.get({ plain: true });
 
     // Render the edit post page with post data
-    res.render('editpost', { post });
+    res.render('edit', { post });
   } catch (err) {
     res.status(500).json(err);
   }
