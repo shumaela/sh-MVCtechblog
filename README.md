@@ -50,3 +50,9 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 ## Screenshot
 
 [MVC-Tech-Blog](https://github.com/shumaela/sh-MVCtechblog/assets/147661185/bfe17dba-3ed5-4dba-8cca-7269f0866f86)
+
+## Links
+
+[Deploy-Heroku-Link](https://arcane-cliffs-24447-7439d4b8bdc0.herokuapp.com/)
+
+[GitHub-Repo-Link](https://github.com/shumaela/sh-MVCtechblog)
